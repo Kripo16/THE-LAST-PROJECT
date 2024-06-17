@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    transition: background-color 1s ease;
+}
+
+#password-container, #letter-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.hint {
+    font-weight: bold;
+    color: red;
+}
+
+#letter-container {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+#letter {
+    font-family: 'El Messiri', Arial, sans-serif;
+    /* Add other styles as needed */
+}
+#letter-container.show {
+    opacity: 1;
+}
+
+#letter-container h1 {
+    color: #FF69B4;
+}
+
+#letter-container p {
+    transition: opacity 2s ease-in-out 1s;
+}
