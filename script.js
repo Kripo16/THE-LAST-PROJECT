@@ -63,7 +63,7 @@ function checkPassword() {
         }, 100); // Delay to ensure display change is applied before opacity transition
         document.getElementById('letter').innerHTML = letter.replace(/\n/g, '<br>');
     } else {
-        alert('Incorrect password. Please try again.');
+        alert('Incorrect password. You know the password is the nickname I call you. it ends with "...bie"');
     }
 }
 
