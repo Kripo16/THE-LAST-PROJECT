@@ -1,13 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
-    width: 80%;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-    transition: background-color 1s ease;
 }
 
 #password-container, #letter-container {
@@ -16,9 +14,8 @@ body {
     border: 1px solid #ccc;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
+    max-width: 90%; /* Adjust max-width as needed */
+    margin: 20px; /* Add margin to create space from edges */
 }
 
 input[type="password"] {
@@ -26,10 +23,6 @@ input[type="password"] {
     margin: 10px 0;
     width: calc(100% - 22px);
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    margin-top: 0px;
-    border-radius: 10px;
-    font-size: 20px;
 }
 
 button {
@@ -38,8 +31,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
-    font-size: 15px;
 }
 
 button:hover {
@@ -50,19 +41,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-.hint {
-    font-weight: bold;
-    color: red;
-}
-
-#letter-container {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-}
-
 #letter {
-    font-family: 'El Messiri', Arial, sans-serif;
-    /* Add other styles as needed */
+    font-family: 'El Messiri', Arial, sans-serif; /* Apply El Messiri font */
 }
 #letter-container.show {
     opacity: 1;
